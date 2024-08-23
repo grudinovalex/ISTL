@@ -1,0 +1,4 @@
+uptime -p+
+uptime -v
+uptime -h
+uptime -s

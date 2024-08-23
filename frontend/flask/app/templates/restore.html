@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Restore to factory settings</h1>
+<hr class="default">
+<ul>
+    <li><a href="{{ url_for('ch1_restore') }}">Chapter 1 restore</a></li>
+    <li><a href="{{ url_for('ch2_restore') }}">Chapter 2 restore</a></li>
+    <li><a href="{{ url_for('ch3_restore') }}">Chapter 3 restore</a></li>
+    <li><a href="{{ url_for('ch4_restore') }}">Chapter 4 restore</a></li>
+    <li><a href="{{ url_for('ch5_restore') }}">Chapter 5 restore</a></li>
+</ul>
+<hr class="default">
+<p>If you break your Linux Machine, preform a complete factory reset by executing the <b>restore</b> script in the <b>ISTL</b> cloned git repository</p>
+command:<br> <code>./restore</code>
+<hr class="default">
+
+{% endblock %}

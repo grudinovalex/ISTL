@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<h1>Chapter 3</h1>
+<p>Redirection operators, piping & working with text</p>
+<hr class="default">
+<h3>Exercises:</h3>
+<ol>
+    <li><a href="{{ url_for('ch3_ex1') }}">Cat 🐱 > Dog 🐶</a></li>
+    <li><a href="{{ url_for('ch3_ex2') }}">Gluing files together</a></li>
+    <li><a href="{{ url_for('ch3_ex3') }}">Listing the system</a></li>
+    <li><a href="{{ url_for('ch3_ex4') }}">Building your car collection</a></li>
+    <li><a href="{{ url_for('ch3_ex5') }}">Somebody ordered a plumber?</a></li>
+    <li><a href="{{ url_for('ch3_ex6') }}">Every city in the world</a></li>
+    <li><a href="{{ url_for('ch3_ex7') }}">Now I know my ABCs</a></li>
+    <li><a href="{{ url_for('ch3_ex8') }}">Searching for fencers</a></li>
+    <li><a href="{{ url_for('ch3_ex9') }}">Introduction Regular Expressions</a></li>
+    <li><a href="{{ url_for('ch3_ex10') }}">Getting your slice of the pie</a></li>
+</ol>
+<hr class="default">
+<p style="text-align:center;">
+    <button onclick="document.location='{{ url_for('ch3_ex1') }}'">Start</button>
+</p>
+</body>
+
+{% endblock %}

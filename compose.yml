@@ -1,0 +1,46 @@
+services:
+  istl:
+    image: istl_fedora:latest
+    build: ./backend/istl_instance
+    hostname: istl
+    container_name: istl
+    restart: always
+    expose:
+      - 22
+    ports:
+      - 2222:22
+      
+  istl_flask:
+    image: istl_flask:latest
+    build: ./frontend/flask
+    hostname: istl_flask
+    container_name: istl_flask
+    restart: always
+    expose:
+      - 5000
+    ports:
+      - 8000:5000
+
+  istl_server:
+    image: istl_server:latest
+    build: ./backend/istl_server
+    hostname: rmtlnx1000
+    container_name: istl_server
+    restart: always
+    expose:
+      - 22
+    ports:
+      - 2223:22  
+      
+  wetty:
+    image: wetty
+    build: ./backend/wetty
+    hostname: wetty
+    container_name: wetty
+    restart: always
+    expose:
+      - 3000
+      - 22
+    ports:
+      - 3000:3000
+      - 2224:22    
