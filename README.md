@@ -1,5 +1,5 @@
 # ISTL - Interactive SysAdmin Training Lab
-<img src="terminal_guy.jpeg" alt="dterminal guy" width="500" height="200"/>
+<img src="terminal_guy.jpeg" alt="dterminal guy" width="500" height="300"/>
 
 ## Prerequisites
 - Docker Desktop
