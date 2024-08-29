@@ -1,5 +1,5 @@
 # ISTL - Interactive SysAdmin Training Lab
-<img src="terminal_guy.jpeg" alt="dterminal guy" width="500" height="200"/>
+<img src="terminal_guy.jpeg" alt="dterminal guy" width="500" height="300"/>
 
 ## Prerequisites
 - Docker Desktop
@@ -10,16 +10,16 @@
 ## Tutorial
 - Clone this git repository to your local machine
 ```shell
-  git clone git@git.cs.bham.ac.uk:projects-2023-24/axg536.git
+git clone git@github.com:grudinovalex/istl.git
 ```
 - Start ISTL by executing the start script
 ```shell
-  ./start
+./start
 ```
 - ISTL runs locally on your machine
 - Open ISTL app through you browser by connecting to localhost on port 8000, link: [localhost:8000](http://localhost:8000)
 - Follow the instructions and complete the exercises
 - Once you're done, shutdown ISTL by executing the stop script
 ```shell
-  ./stop
+./stop
 ```
